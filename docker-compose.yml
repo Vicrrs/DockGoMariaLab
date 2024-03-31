@@ -1,0 +1,9 @@
+version: "3.3"
+services:
+  databases:
+    image: 'mariadb:11.3'
+    container_name: 'database'
+    environment: 
+      MARIADB_ROOT_PASSWORD: admin@123
+    ports:
+      - "3006:3006"
